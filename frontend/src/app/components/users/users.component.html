@@ -1,0 +1,27 @@
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Vorname</th>
+      <th scope="col">Nachname</th>
+      <th scope="col">Email</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.firstname }}</td>
+      <td>{{ user.lastname }}</td>
+      <td>{{ user.email }}</td>
+      <td><button mat-raised-button>Einkaufswagen</button></td>   
+      <td><button mat-raised-button >Bestellungen</button>  </td>
+      <td><button mat-raised-button (click)="updateUser(user.id, user)" >Bearbeiten</button>  </td>
+      <td><button mat-raised-button (click)="deleteUser(user.id)" >Löschen</button>  </td>
+    </tr>
+  </tbody>
+</table>
+<button mat-raised-button (click)="addUser()" class="add-button" >Hinzufügen</button>

@@ -1,0 +1,22 @@
+<h2>Neuen Benutzer erstellen</h2>
+<div mat-dialog-content  >
+
+    <p>Vorname:</p>
+        <mat-form-field appearance="outline" >
+            <input matInput > 
+        </mat-form-field>
+    <p>Nachname:</p>
+        <mat-form-field appearance="outline">
+            <input matInput > 
+        </mat-form-field>
+    <p>Email:</p>
+        <mat-form-field appearance="outline">
+           <input matInput > 
+        </mat-form-field>
+
+</div>
+
+<div mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close >Abbrechen</button>
+    <button mat-raised-button mat-primary (click)="saveUser()" >Hinzufügen</button>
+</div>

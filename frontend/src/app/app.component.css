@@ -1,0 +1,20 @@
+.main-webshop {
+    border: 1px gray solid;
+    padding: 15px;
+}
+
+.main-header {
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.tab-header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tab-group {
+    margin: 30px;
+}

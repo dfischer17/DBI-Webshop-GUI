@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Preis</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}€</td>  
+      <td><button mat-raised-button (click)="updateProduct(product)" >Bearbeiten</button>  </td>
+      <td><button mat-raised-button (click)="deleteProduct(product.id)" >Löschen</button>  </td>
+    </tr>
+  </tbody>
+</table>
+<button mat-raised-button (click)="addProduct()" class="add-button">Hinzufügen</button>
+
